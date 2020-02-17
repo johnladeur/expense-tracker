@@ -1,0 +1,31 @@
+.header{
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 600px;
+    position: absolute;
+    
+}
+
+.main{
+    margin-left: 475px;
+    margin-top: 300px;
+    position: absolute;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th, td{border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+th{
+    font-size: 1.5rem;
+    
+}
+
+td{
+    font-size:1.25rem;
+}
