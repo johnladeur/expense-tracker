@@ -15,7 +15,8 @@
         <h1>Expense Tracker</h1>
     </div>
     <div  class="input-container">
-        <div>
+        <div class="row">
+            <div class="col-md 4">
         <span>Type:</span>
         <select name="type">
             <option value="Card">Card</option>
@@ -23,28 +24,37 @@
             <option value="Check">Check</option>
             <option value="Other">Other</option>
         </select>
+    </div>
+    <div class="col-md 4">
+        <span class="amount">Amount:</span>
+        <input id="Amount-entry" type="number">
         </div>
-
-        <div>
+        </div>
+    <div class="row">
+        <div class="col-sm-6">
         <span>Name:</span>
         <input id="expense-entry" type="text" placeholder="Expense description">
         </div>
-
-        <div>
+        <div class="col-sm-6">
+            <span>Location:</span>
+            <input type="text">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
         <span>Date:</span>
         <input id="date-input" type="date"
         min="2019-01-01">
         </div>
+    </div>
 
-        <div>
-        <span>Amount:</span>
-        <input id="Amount-entry" type="number">
-        </div>
+       
 
-        <div>
-            <span>Location:</span>
-            <input type="text">
-        </div>
+        
+
+            <button type="button" id="button" class="btn btn-light">Add Expense</button>
+        
+
     </div>
 
     <div style="overflow-x:auto;">
