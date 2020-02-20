@@ -1,31 +1,47 @@
+.body {
+    background-color: rgb(7, 39, 51);
+    color:rgb(172, 219, 238);
+}
+
 .header{
     text-align: center;
-    margin-top: 200px;
-    margin-left: 600px;
-    position: absolute;
+    padding-top: 30px;
+    color: snow;
+    font-weight: bold;
+    font-size: 1.6rem;
+
+}
+
+.expense-table{
+    width: 45%;
+    margin-left: 25%;
+    margin-top: 3%;
+    color: rgb(172, 219, 238);
+}
+
+.input-container{
+    width: 650px;
+    margin-left: 30%;
     
-}
-
-.main{
-    margin-left: 475px;
-    margin-top: 300px;
-    position: absolute;
-}
-
-table{
-    border-collapse: collapse;
-}
-
-th, td{border: 1px solid black;
-    text-align: center;
-    padding: 20px;
 }
 
 th{
-    font-size: 1.5rem;
-    
+    color: rgb(172, 219, 238);
+    font-weight: 900;
+    font-size: 1.4rem;
 }
 
-td{
-    font-size:1.25rem;
+tr{
+    color: rgb(172, 219, 238);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+span{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+div{
+    padding: 15px;
 }
