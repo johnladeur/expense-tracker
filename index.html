@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
     <title>Expense Tracker</title>
 </head>
@@ -17,63 +17,55 @@
     <div  class="input-container">
         <div class="row">
             <div class="col-md 4">
-        <span>Type:</span>
-        <select name="type">
-            <option value="Card">Card</option>
-            <option value="Cash">Cash</option>
-            <option value="Check">Check</option>
-            <option value="Other">Other</option>
-        </select>
-    </div>
-    <div class="col-md 4">
-        <span class="amount">Amount:</span>
-        <input id="Amount-entry" type="number">
+                <span>Type:</span>
+                    <select name="type">
+                        <option value="Card">Card</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Check">Check</option>
+                        <option value="Other">Other</option>
+                    </select>
+            </div>
+            <div class="col-md 4">
+                <span class="amount">Amount:</span>
+                <input id="Amount-entry" type="number">
+            </div>
         </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <span>Name:</span>
+                <input id="name-entry" type="text" placeholder="Expense description">
+            </div>
+            <div class="col-sm-6">
+                <span>Location:</span>
+                <input id="location-entry" type="text">
+            </div>
         </div>
-    <div class="row">
-        <div class="col-sm-6">
-        <span>Name:</span>
-        <input id="expense-entry" type="text" placeholder="Expense description">
+        <div class="row">
+            <div class="col-sm-12">
+                <span>Date:</span>
+                <input id="date-entry" type="date"
+                min="2019-01-01">
+            </div>
         </div>
-        <div class="col-sm-6">
-            <span>Location:</span>
-            <input type="text">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
-        <span>Date:</span>
-        <input id="date-input" type="date"
-        min="2019-01-01">
-        </div>
-    </div>
-
-       
-
-        
-
-            <button type="button" id="button" class="btn btn-light">Add Expense</button>
-        
-
+        <button type="button" id="button" class="btn btn-light">Add Expense</button>
     </div>
 
     <div style="overflow-x:auto;">
-    <div class="expense-table">
-    <table class="table">
-            <tr>
-                <th>Type</th>
-                <th>Name</th>
-                <th>Date</th>
-                <th>Amount</th>
-                <th>Location</th>
+        <div class="expense-table">
+            <table id="table" class="table">
                 <tr>
-                <td colspan="5">Add an item to be tracked.</td>
-                
-            </tr>
-            </tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Location</th>
+                    <tr id="item-row">
+                        <td id="default-message" colspan="5">Add an item to be tracked.</td>
+                    </tr>
+                </tr>
         
-    </table>
-</div>
+            </table>
+        </div>
     </div>
 </body>
 </html>
