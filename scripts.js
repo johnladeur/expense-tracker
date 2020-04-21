@@ -4,6 +4,7 @@
 //return input values in "item-row"
 
 
+
 var addExpenseButton = document.getElementById("add-button");
 
 addEventListener("click", function(){
